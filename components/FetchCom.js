@@ -5,7 +5,7 @@ import {
   Text,
   View,
 } from 'react-native';
-// import Bananas from './components/Bananas.js';
+import Bananas from './Bananas.js';
 
 export default class FetchApp extends Component {
   constructor(props) {
@@ -40,7 +40,7 @@ export default class FetchApp extends Component {
           renderItem={({ item }) => <Text>{item.title}, {item.releaseYear}</Text>}
           keyExtractor={({ id }, index) => id}
         />
-        {/* <Bananas/> */}
+        <Bananas/>
       </View>
     );
   }
