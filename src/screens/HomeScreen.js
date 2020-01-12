@@ -22,11 +22,6 @@ import { Text, Button, View } from 'react-native';
 // }
 
 const HomeScreen = ({ navigation }) => {
-  // try {
-  //   registerForPushNotficationsAsync();
-  // } catch (e) {
-  //   console.error('error', e);
-  // }
   return (
     <View>
       <Text>Hi, there!</Text>
@@ -45,6 +40,10 @@ const HomeScreen = ({ navigation }) => {
       <Button
         onPress={() => navigation.navigate('Counter')}
         title="Go to Counter"
+      />
+      <Button
+        onPress={() => navigation.navigate('Text')}
+        title="Go to Text"
       />
     </View>
   );
