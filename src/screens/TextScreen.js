@@ -20,6 +20,7 @@ const TextScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  // StyleSheet.absoluteFillObject = { top: 0, bottom: 0, ...}
   input: {
     margin: 15,
     borderColor: 'black',
